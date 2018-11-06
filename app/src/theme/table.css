@@ -1,0 +1,51 @@
+table {
+    border-collapse: collapse;
+    margin: 1.5em auto;
+}
+
+th, td {
+    padding: 0.25em 0.5em;
+}
+
+th:not(:last-child), td:not(:last-child) {
+    border-right: 1px dashed darkgray;
+}
+
+thead {
+    border-bottom: 2px solid currentColor;
+}
+
+tbody tr:nth-child(2n) {
+    background: #d1ebfe;
+}
+
+.pagination {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box, .pagination {
+    color: #2e304d;
+    font-size: 0.95em;
+    font-weight: lighter;
+}
+
+.summary em {
+    color: dodgerblue;
+    font-style: italic;
+}
+
+.table-container {
+    position: relative;
+}
+
+.table-container > .loading {
+    background: white;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

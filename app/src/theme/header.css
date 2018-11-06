@@ -1,0 +1,28 @@
+#main-header {
+    align-items: center;
+    border-bottom: 1px solid dodgerblue;
+    box-shadow: 0 3px 3px 0 #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-header ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#main-header li {
+    padding: 0.5em 1em;
+}
+
+#main-header nav{
+    font-size: 0.95em;
+}
+
+#logo{
+    color: dodgerblue;
+    font-weight: bold;
+    padding: 0.5em;
+}

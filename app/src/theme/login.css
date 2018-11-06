@@ -1,0 +1,26 @@
+#login-container {
+    flex-grow: 1;
+}
+
+#login-form label {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#login-form label, #login-form button {
+    margin: 1em 0;
+}
+
+#login-form label span, #login-form button {
+    width: 100%;
+}
+
+#login-form input, #login-form button{
+    padding: 0.25em;
+}
+
+#login-form input {
+    flex-grow: 1;
+}
+
+

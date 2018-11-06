@@ -1,0 +1,129 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+}
+
+body {
+    box-sizing: border-box;
+    color: #161723;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", "Open Sans", "OpenSans", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: auto;
+    padding: 1em 0;
+    width: 80%;
+}
+
+h1 {
+    align-self: start;
+    border-bottom: 1px solid dodgerblue;
+    font-size: 1.15em;
+}
+
+footer {
+    font-size: 0.8rem;
+    padding: 0.5em;
+}
+
+body * {
+    box-sizing: inherit;
+}
+
+input, button {
+    border: 1px solid;
+    color: inherit;
+    font: inherit;
+    padding: 0.2em;
+    transition: all 0.3s;
+}
+
+button {
+    box-shadow: 1px 1px 2px 0 lightgray;
+    outline: none;
+}
+
+button:disabled {
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+button:not(:disabled):focus > span, button:not(:disabled):hover > span {
+    border-bottom: 1px solid;
+}
+
+input {
+    font-size: 0.85em;
+    min-width: 220px;
+}
+
+input::placeholder {
+    color:currentColor;
+    opacity: 0.7;
+}
+
+input:focus {
+    background: dodgerblue;
+    border-color: dodgerblue;
+    box-shadow: 0 0 4px 0 dodgerblue;
+    color: white;
+}
+
+label > span {
+    --padding: 0.25em;
+    padding: var(--padding) var(--padding) var(--padding) 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.page-centered {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.action-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-bar > button {
+    flex-grow: 1;
+    margin: 0 0.1em;
+}
+
+.action {
+    background: dodgerblue;
+    color: white;
+    border-color: blue;
+}
+
+.danger {
+    background: salmon;
+    border-color: red;
+    color: white;
+}
